@@ -26,24 +26,28 @@ To start off, let's quiz your knowledge about your friends and colleagues!
 hbdrick::guess_who()
 ```
 
-Or, run `hbd_joel()` with a `from_who` argument. 
+Or, run `hbd_rick()` with a `from_who` argument. 
 If you are feeling adventurous, run the function with "anyone". 
 ``` r
 hbd_rick(from_who = "anyone")
 ```
 This will randomly sample one birthday message, and make you feel super risk-taking. 
 
-Do you have someone in mind, and wonder if they wished Joel happy birthday?   
+Do you have someone in mind, and wonder if they wished Rick happy birthday?   
 Type their name!  
 ``` r
-hbd_rick(who = "Arun")
+hbd_rick(from_who = "Arun")
 ```
+
+<!-- there isn't a who parameter in hbd_rick....
+
 Or, maybe you have multiple people in mind:
 ``` r
 hbd_rick(who = c("Satheesh", "Maryam"))
 ```
+-->
 
 Hey, if you need tons of love, try "everyone"
 ``` r
-hbd_rick(who = "everyone")
+hbd_rick(from_who = "everyone")
 ```
