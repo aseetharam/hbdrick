@@ -6,15 +6,15 @@
 hbd_rick <- function(from_who) {
 
   # joel's nicknames for people
-  nicknames = c("Andrew" = "Andrew",
-                "Arun" = "Arun",
-                "Siva" = "Siva",
-                "Maryam" = "Maryam",
-                "Jennifer" = "Jennifer",
-                "Satheesh" = "Satheesh")
+  nicknames = c("andrew" = "Andrew",
+                "arun" = "Arun",
+                "siva" = "Siva",
+                "maryam" = "Maryam",
+                "jennifer" = "Jennifer",
+                "satheesh" = "Satheesh")
 
   # change the name to lower cases if capitalized & replace nicknames with real names
-  from_who = stringr::str_replace_all(tolower(from_who), nicknames)
+  from_who = stringr::str_replace_all(tolower(from_who), nicknames) #<= this will lowercase everyone's names
 
   # custom message for Matt
   if(any( stringr::str_detect(from_who, "matt") == TRUE)) cat("Matt is going to tell you in person\U1F496\n")
