@@ -16,6 +16,6 @@ guess_who <- function() {
                            fill = TRUE))
     shame_msg = c("embarrassing", "rude", "how dare you", "for real?!", "wow",
                   "shame", "what are you doing", "tell me you are kidding",
-                  "I'm judging you hard right now")
+                  "I'm judging you hard right now", "No Raise for you!", "Back you go to Associate Scientist!", "Disappointed, I expected better from you!")
     print(ifelse(which(options==guess_msg$name) == guess, "NICE!", glue::glue("{sample(shame_msg, 1)}... it was {stringr::str_to_title(guess_msg$name)}")))
 }
